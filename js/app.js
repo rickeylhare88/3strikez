@@ -1,17 +1,17 @@
 /* 3STRIKEZ storefront logic v1 — front-end demo, no real checkout */
 const PRODUCTS = [
-  {id:'crown-graffiti-tee',   name:'Crown Graffiti Tee',   price:45.00,  cat:'shirts',      img:'assets/prod-crown-graffiti-tee-v1.jpg',   sizes:['S','M','L','XL','2XL'], tag:null},
-  {id:'three-strikes-box-tee',name:'Three Strikes Box Tee',price:40.00,  cat:'shirts',      img:'assets/prod-three-strikes-tee-v1.jpg',    sizes:['S','M','L','XL','2XL'], tag:null},
-  {id:'red-alert-heavy-hoodie',name:'Red Alert Heavy Hoodie',price:95.00,cat:'hoodies',     img:'assets/prod-red-alert-hoodie-v1.jpg',    sizes:['S','M','L','XL','2XL'], tag:null},
-  {id:'blockline-zip-hoodie', name:'Blockline Zip Hoodie', price:110.00, cat:'hoodies',     img:'assets/prod-blockline-zip-v1.jpg',       sizes:['S','M','L','XL','2XL'], tag:null},
-  {id:'night-shift-cargo',    name:'Night Shift Cargo',   price:85.00,  cat:'pants',       img:'assets/prod-night-shift-cargo-v1.jpg',  sizes:['28','30','32','34','36'], tag:null},
-  {id:'lifestyle-track-pant', name:'Lifestyle Track Pant',price:70.00,  cat:'pants',       img:'assets/prod-lifestyle-track-pant-v1.jpg',sizes:['S','M','L','XL','2XL'], tag:'NEW'},
-  {id:'crown-snapback',       name:'Crown Snapback',       price:38.00,  cat:'hats',        img:'assets/prod-crown-snapback-v1.jpg',      sizes:['One Size'], tag:null},
-  {id:'3z-fitted-cap',        name:'3Z Fitted Cap',        price:42.00,  cat:'hats',        img:'assets/prod-3z-fitted-v1.jpg',           sizes:['7','7 1/4','7 1/2','7 3/4'], tag:null},
-  {id:'strike-hi-sneaker',    name:'Strike Hi Sneaker',    price:160.00, cat:'shoes',       img:'assets/prod-strike-hi-v1.jpg',           sizes:['8','9','10','11','12','13'], tag:null},
-  {id:'curbside-low',         name:'Curbside Low',         price:130.00, cat:'shoes',       img:'assets/prod-curbside-low-v1.jpg',       sizes:['8','9','10','11','12','13'], tag:null},
-  {id:'cuban-link-chain',     name:'Cuban Link Chain',     price:65.00,  cat:'accessories', img:'assets/prod-cuban-link-v1.jpg',         sizes:['20IN','24IN'], tag:null},
-  {id:'corner-store-crossbody',name:'Corner Store Crossbody',price:55.00,cat:'accessories',img:'assets/prod-crossbody-v1.jpg',            sizes:['One Size'], tag:'NEW'},
+  {id:'crown-graffiti-tee',   name:'Crown Graffiti Tee',   price:45.00,  cat:'shirts',      img:'prod-crown-graffiti-tee-v1.jpg',   sizes:['S','M','L','XL','2XL'], tag:null},
+  {id:'three-strikes-box-tee',name:'Three Strikes Box Tee',price:40.00,  cat:'shirts',      img:'prod-three-strikes-tee-v1.jpg',    sizes:['S','M','L','XL','2XL'], tag:null},
+  {id:'red-alert-heavy-hoodie',name:'Red Alert Heavy Hoodie',price:95.00,cat:'hoodies',     img:'prod-red-alert-hoodie-v1.jpg',    sizes:['S','M','L','XL','2XL'], tag:null},
+  {id:'blockline-zip-hoodie', name:'Blockline Zip Hoodie', price:110.00, cat:'hoodies',     img:'prod-blockline-zip-v1.jpg',       sizes:['S','M','L','XL','2XL'], tag:null},
+  {id:'night-shift-cargo',    name:'Night Shift Cargo',   price:85.00,  cat:'pants',       img:'prod-night-shift-cargo-v1.jpg',  sizes:['28','30','32','34','36'], tag:null},
+  {id:'lifestyle-track-pant', name:'Lifestyle Track Pant',price:70.00,  cat:'pants',       img:'prod-lifestyle-track-pant-v1.jpg',sizes:['S','M','L','XL','2XL'], tag:'NEW'},
+  {id:'crown-snapback',       name:'Crown Snapback',       price:38.00,  cat:'hats',        img:'prod-crown-snapback-v1.jpg',      sizes:['One Size'], tag:null},
+  {id:'3z-fitted-cap',        name:'3Z Fitted Cap',        price:42.00,  cat:'hats',        img:'prod-3z-fitted-v1.jpg',           sizes:['7','7 1/4','7 1/2','7 3/4'], tag:null},
+  {id:'strike-hi-sneaker',    name:'Strike Hi Sneaker',    price:160.00, cat:'shoes',       img:'prod-strike-hi-v1.jpg',           sizes:['8','9','10','11','12','13'], tag:null},
+  {id:'curbside-low',         name:'Curbside Low',         price:130.00, cat:'shoes',       img:'prod-curbside-low-v1.jpg',       sizes:['8','9','10','11','12','13'], tag:null},
+  {id:'cuban-link-chain',     name:'Cuban Link Chain',     price:65.00,  cat:'accessories', img:'prod-cuban-link-v1.jpg',         sizes:['20IN','24IN'], tag:null},
+  {id:'corner-store-crossbody',name:'Corner Store Crossbody',price:55.00,cat:'accessories',img:'prod-crossbody-v1.jpg',            sizes:['One Size'], tag:'NEW'},
 ];
 const CATS = {shirts:'Shirts',hoodies:'Hoodies',pants:'Pants',hats:'Hats',shoes:'Shoes',accessories:'Accessories'};
 const money = n => '$' + n.toFixed(2);
