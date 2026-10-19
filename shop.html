@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop All — 3STRIKEZ</title>
+<meta name="description" content="Shop the full 3STRIKEZ collection: shirts, hoodies, pants, hats, shoes, accessories.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="shop">
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">3STRIKE<span>Z</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="shop.html" class="active">Shop All</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <button class="cart-btn" data-open-cart>Bag <span class="cart-count">0</span></button>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="bg"></div><div class="shade"></div>
+  <h1>Shop <span style="color:var(--red)">All</span></h1>
+  <p>The full collection. Pick your size, add to bag.</p>
+</div>
+
+<div class="wrap">
+  <div class="toolbar">
+    <input class="search" id="shop-search" type="search" placeholder="Search products…">
+    <select class="sort" id="shop-sort">
+      <option value="featured">Sort: Featured</option>
+      <option value="price-asc">Price: Low to High</option>
+      <option value="price-desc">Price: High to Low</option>
+      <option value="name">Name: A–Z</option>
+    </select>
+  </div>
+  <div class="filter-pills">
+    <button class="filter-pill" data-cat="all">ALL</button>
+    <button class="filter-pill" data-cat="new">NEW ARRIVALS</button>
+    <button class="filter-pill" data-cat="shirts">SHIRTS</button>
+    <button class="filter-pill" data-cat="hoodies">HOODIES</button>
+    <button class="filter-pill" data-cat="pants">PANTS</button>
+    <button class="filter-pill" data-cat="hats">HATS</button>
+    <button class="filter-pill" data-cat="shoes">SHOES</button>
+    <button class="filter-pill" data-cat="accessories">ACCESSORIES</button>
+  </div>
+  <div class="result-count" id="result-count"></div>
+  <div class="product-grid" id="shop-grid" style="padding-bottom:90px"></div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">3STRIKE<span>Z</span></div>
+        <div class="foot-tag">MORE THAN CLOTHING. IT'S A LIFESTYLE.</div>
+      </div>
+      <div class="foot-links">
+        <a href="index.html">Home</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="foot-note"><span>© 2026 3STRIKEZ. All rights reserved.</span><span>Demo storefront — checkout coming soon.</span></div>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
